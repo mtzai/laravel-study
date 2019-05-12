@@ -21,3 +21,9 @@ npm run dev
 git add -A
 git commit -m "第一个Vue组件"
 git push
+
+php artisan make:controller RequestController
+npm run dev
+git add -A
+git commit -m "测试文件上传功能"
+git push

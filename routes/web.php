@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// 用于显式上传表单
+Route::get('form', 'RequestController@formPage');
+// 用于处理文件上传
+Route::post('form/file_upload', 'RequestController@fileUpload');

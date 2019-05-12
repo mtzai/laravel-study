@@ -28,6 +28,7 @@ git add -A
 git commit -m "测试文件上传功能"
 git push
 
-git add -A
-git commit -m "完善后端文件上传代码"
-git push
+git add -A && git commit -m "完善后端文件上传代码" && git push
+
+npm run dev
+git add -A && git commit -m "优化前端图片上传组件代码" && git push

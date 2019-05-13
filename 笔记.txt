@@ -22,7 +22,7 @@ git add -A
 git commit -m "第一个Vue组件"
 git push
 
-php artisan make:controller RequestController
+
 npm run dev
 git add -A
 git commit -m "测试文件上传功能"
@@ -32,3 +32,6 @@ git add -A && git commit -m "完善后端文件上传代码" && git push
 
 npm run dev
 git add -A && git commit -m "优化前端图片上传组件代码" && git push
+
+php artisan make:controller StudyController
+git add -A && git commit -m "trait使用" && git push

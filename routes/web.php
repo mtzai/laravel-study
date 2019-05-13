@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('form', 'RequestController@formPage');
 // 用于处理文件上传
 Route::post('form/file_upload', 'RequestController@fileUpload');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/study', 'StudyController@testTrait')->name('study');

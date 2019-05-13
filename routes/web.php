@@ -25,3 +25,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/study', 'StudyController@testTrait')->name('study');
+Route::get('/testAuthenticatesAndRegistersUsers', 'StudyController@testAuthenticatesAndRegistersUsers')->name('study');

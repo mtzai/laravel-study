@@ -37,3 +37,15 @@ php artisan make:controller StudyController
 git add -A && git commit -m "trait使用" && git push
 git add -A && git commit -m "多个Trait可能会引起命名冲突问题，解决方案" && git push
 git add -A && git commit -m "laravel-ide-helper 自动补全门面（Facade）的问题" && git push
+
+
+git clone https://github.com/mtzai/laravel-study.git laravel-study
+cd laravel-study
+composer install
+#重命名.env.example到.env
+composer run post-root-package-install
+php artisan key:generate
+DB_DATABASE=laravel-study
+php artisan migrate
+php artisan db:seed
+git add -A && git commit -m "兜底路由" && git push

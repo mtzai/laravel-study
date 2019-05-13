@@ -26,3 +26,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/study', 'StudyController@testTrait')->name('study');
 Route::get('/testAuthenticatesAndRegistersUsers', 'StudyController@testAuthenticatesAndRegistersUsers')->name('study');
+
+#兜底路由
+Route::fallback(function () {
+    return '你迷路了。。。';
+});
